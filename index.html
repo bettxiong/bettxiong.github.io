@@ -19,10 +19,10 @@
 	    <div class="nav-wrapper white">
 	      <a href="#" class="brand-logo"><img src = "auxilliomd.png" style="max-height: 64px;"></a>
 	      <ul id="nav-mobile" class="right hide-on-med-and-down">
-	        <li><a class="black-text" href="#">Features</a></li>
+	        <li><a class="black-text" href="#features">Features</a></li>
 	        <li><a class="black-text" href="#">Pricing</a></li>
-	        <li><a class="black-text" href="#">Company</a></li>
-	        <li><a class="black-text" href="#">Contact Us</a></li>
+	        <li><a class="black-text" href="#company">Company</a></li>
+	        <li><a class="black-text" href="#contact">Contact Us</a></li>
 	      </ul>
 	    </div>
 	  </nav>
@@ -54,64 +54,77 @@
 		</div>
 	</div>
 
-	<div>
+	<div id = "features" class="scrollspy">
 		<div class = "container">
 			<h3 class="black-text">Unique Advantage</h3>
 			<div class="row">
 		      <div class="col s4">
-		      	<p>User-Focused <br>Intuitive data visualization that is easily viewable by busy doctors. We are collaborating with Yale New Haven Health to deliver this product.</p>
+		      	<p><b>User-Focused</b> <br>Intuitive data visualization that is easily viewable by busy doctors. We are collaborating with Yale New Haven Health to deliver this product.</p>
 		      </div>
 		      <div class="col s4">
-		      	<p>Niche Market<br>Gastrointestinal bleeding risk assessment is a specialized field that no other business has entered.</p>
+		      	<p><b>Niche Market</b><br>Gastrointestinal bleeding risk assessment is a specialized field that no other business has entered.</p>
 		      </div>
 		      <div class="col s4">
-		      	<p>Seamless Integration <br>Automatically extracts information from EHRs, such as Epic, and presents treatment recommendations based on the data.</p>
+		      	<p><b>Seamless Integration</b> <br>Automatically extracts information from EHRs, such as Epic, and presents treatment recommendations based on the data.</p>
 		      </div>
 		    </div>
 		</div>
 	</div>
 
-	<div>
+	<div id = "company" class="scrollspy">
 		<div class = "container">
 			<h3 class="black-text">Meet The Team</h3>
-			<div class="row">
-		      <div class="col s3">
+			<div class="row" style="text-align: center;">
+		      <div class="col s2">
 		      	<img style = "max-width: 180px;" src = "1.png">
 		      	<p>Aidan Neziri</p>
+		      	<p>Business Development</p>
 		      </div>
-		      <div class="col s3">
+		      <div class="col s2">
 		      	<img style = "max-width: 180px;"  src = "2.png">
 		      	<p>Rami Rajjoub</p>
+		      	<p>Business Development</p>
 		      </div>
-		      <div class="col s3">
+		      <div class="col s2">
 		      	<img  style = "max-width: 180px;" src = "3.png">
 		      	<p>Teckhua Chiang</p>
+		      	<p>Team Lead/Software Developer</p>
 		      </div>
-		      <div class="col s3">
+		      <div class="col s2">
 		      	<img  style = "max-width: 180px;" src = "4.png">
 		      	<p>Surtaz Khan</p>
+		      	<p>Software Developer</p>
 		      </div>
-		    </div>
-		    <div class="row">
-		      <div class="col s3">
+		      <div class="col s2">
 		      	<img  style = "max-width: 180px;" src = "5.png">
 		      	<p>Betty Xiong</p>
+		      	<p>Business Development</p>
 		      </div>
-		      <div class="col s3">
+		    </div>
+		    <div class="row" style="text-align: center;">
+		    	<div>
+		      <div class="col s2">
 		      	<img  style = "max-width: 180px;" src = "6.png">
 		      	<p>Dr. Dennis Shung</p>
 		      </div>
-		      <div class="col s3">
+		      <div class="col s2">
 		      	<img  style = "max-width: 180px;" src = "7.png">
 		      	<p>Dr. Michael Simonov</p>
+		      </div>
 		      </div>
 		    </div>
 		</div>
 	</div>
 
-<p style="text-align:center;">Contact Us: <a href="mailto:AuxilioMDteam@gmail.com">AuxilioMDteam@gmail.com</a></p>
+<p  id = "contact" class="scrollspy" style="text-align:center;">Contact Us: <a href="mailto:AuxilioMDteam@gmail.com">AuxilioMDteam@gmail.com</a></p>
 
 </body>
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.scrollspy');
+    var instances = M.ScrollSpy.init(elems, {});
+  });
+</script>
 </html>
